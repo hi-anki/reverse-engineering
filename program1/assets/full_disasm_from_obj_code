@@ -5,14 +5,17 @@ h_obj.o:     file format elf64-x86-64
 Disassembly of section .text:
 
 0000000000000000 <main>:
-   0:	55                   	push   rbp
-   1:	48 89 e5             	mov    rbp,rsp
-   4:	48 8d 05 00 00 00 00 	lea    rax,[rip+0x0]        # b <main+0xb>
-   b:	48 89 c7             	mov    rdi,rax
-   e:	e8 00 00 00 00       	call   13 <main+0x13>
-  13:	b8 00 00 00 00       	mov    eax,0x0
-  18:	5d                   	pop    rbp
-  19:	c3                   	ret
+    0:   	55                   	push   rbp
+    1:   	48 89 e5             	mov    rbp,rsp
+    4:   	48 8d 05 00 00 00 00 	lea    rax,[rip+0x0]        # b <main+0xb>
+    b:   	48 89 c7             	mov    rdi,rax
+    e:   	e8 00 00 00 00       	call   13 <main+0x13>
+   13:   	b8 00 00 00 00       	mov    eax,0x0
+   18:   	5d                   	pop    rbp
+   19:   	c3                   	ret
+
+# Address   Hex-encoded Machine     Disassembly
+# Offset    Code
 
 Disassembly of section .rodata:
 
